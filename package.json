@@ -1,6 +1,6 @@
 {
   "name": "smartcrop-sharp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "smartcrop adapter for sharp",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "gm": "^1.22.0",
-    "smartcrop": "0.0.1"
+    "smartcrop": "1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0"
