@@ -14,8 +14,6 @@ describe('smartcrop', function() {
                 assert.equal(data.topCrop.y, 26);
                 assert.equal(data.topCrop.width, 427);
                 assert.equal(data.topCrop.height, 427);
-                assert.typeOf(data.crops, 'array');
-                assert.isAbove(data.crops.length, 0);
             });
         });
     });
