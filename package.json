@@ -4,7 +4,7 @@
   "description": "smartcrop adapter for sharp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "author": "Jonas Wagner <jonas@29a.ch>",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "smartcrop": "1.0.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
   }
 }

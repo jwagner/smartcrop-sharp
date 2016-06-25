@@ -1,5 +1,7 @@
 # smartcrop-sharp
 
+[![Build Status](https://travis-ci.org/jwagner/smartcrop-sharp.svg?branch=master)](https://travis-ci.org/jwagner/smartcrop-sharp)
+
 This is an adapter module for using [smartcrop.js](https://github.com/jwagner/smartcrop.js)
 with node.js using [sharp](https://github.com/lovell/sharp) for image decoding.
 
