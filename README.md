@@ -45,3 +45,6 @@ applySmartCrop(src, 'flower-square.jpg', 128, 128);
 
 
 ```
+
+## Face Detection Example
+  Check out [smartcrop-cli](https://github.com/jwagner/smartcrop-cli/) for a more advanced [example](https://github.com/jwagner/smartcrop-cli/blob/master/smartcrop-cli.js#L100) of how to use smartcrop from node  including face detection with opencv.
