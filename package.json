@@ -9,11 +9,11 @@
   "author": "Jonas Wagner <jonas@29a.ch>",
   "license": "MIT",
   "dependencies": {
-    "sharp": "^0.15.0",
-    "smartcrop": "1.0.0"
+    "sharp": "^0.16.0",
+    "smartcrop": "1.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+    "mocha": "^3.0.2"
   }
 }
