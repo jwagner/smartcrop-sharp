@@ -36,8 +36,9 @@ var iop = {
     });
   },
   getData: function(image) {
+    var options = {kernel: sharp.kernel.cubic, interpolator: sharp.interpolator.bilinear};
     return image._sharp
-      .resize(image.width, image.height)
+      .resize(image.width, image.height, options)
       .raw()
       .toBuffer()
       .then(function(data) {
