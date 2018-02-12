@@ -3,12 +3,11 @@ var sharp = require('sharp');
 
 function rgb2rgba(input) {
   var output = new Buffer(input.length / 3 * 4);
-  for (var i = 0; i < input.length;i += 3) {
+  for (var i = 0; i < input.length; i += 3) {
     output[i / 3 * 4] = input[i];
     output[i / 3 * 4 + 1] = input[i + 1];
     output[i / 3 * 4 + 2] = input[i + 2];
     output[i / 3 * 4 + 3] = 255;
-
   }
   return output;
 }
@@ -20,23 +19,23 @@ var iop = {
       return {
         width: metadata.width,
         height: metadata.height,
-        _sharp: image,
+        _sharp: image
       };
     });
   },
   resample: function(image, width, height) {
     // this does not clone the image, better performance but fragile
     // (depends on the assumtion that resample+getData is only called once per img)
-    return new Promise(function(resolve, reject) {
+    return new Promise(function(resolve) {
       resolve({
         width: ~~width,
         height: ~~height,
-        _sharp: image._sharp,
+        _sharp: image._sharp
       });
     });
   },
   getData: function(image) {
-    var options = {kernel: sharp.kernel.cubic, interpolator: sharp.interpolator.bilinear};
+    var options = { kernel: sharp.kernel.cubic };
     return image._sharp
       .resize(image.width, image.height, options)
       .raw()
@@ -46,12 +45,11 @@ var iop = {
           data = rgb2rgba(data);
         }
         if (data.length !== image.width * image.height * 4) {
-            console.log(image.width, image.height);
-            throw new Error('unexpected data length ' + data.length);
+          throw new Error('unexpected data length ' + data.length);
         }
         return new smartcrop.ImgData(image.width, image.height, data);
       });
-  },
+  }
 };
 
 exports.crop = function(img, options, callback) {
@@ -59,7 +57,3 @@ exports.crop = function(img, options, callback) {
   options.imageOperations = iop;
   return smartcrop.crop(img, options, callback);
 };
-
-// exports.crop('kitty.jpg').then(function() {
-  // console.log(arguments);
-// });

@@ -31,12 +31,12 @@ var sharp = require('sharp');
 var smartcrop = require('smartcrop-sharp');
 
 function applySmartCrop(src, dest, width, height) {
-  request(src, {encoding: null}, function process(error, response, body) {
+  request(src, { encoding: null }, function process(error, response, body) {
     if (error) return console.error(error);
-    smartcrop.crop(body, {width: width, height: height}).then(function(result) {
+    smartcrop.crop(body, { width: width, height: height }).then(function(result) {
       var crop = result.topCrop;
       sharp(body)
-        .extract({width: crop.width, height: crop.height, left: crop.x, top: crop.y})
+        .extract({ width: crop.width, height: crop.height, left: crop.x, top: crop.y })
         .resize(width, height)
         .toFile(dest);
     });
@@ -45,13 +45,11 @@ function applySmartCrop(src, dest, width, height) {
 
 var src = 'https://raw.githubusercontent.com/jwagner/smartcrop-gm/master/test/flower.jpg';
 applySmartCrop(src, 'flower-square.jpg', 128, 128);
-
-
 ```
 
 ## Face Detection Example
-  Check out [smartcrop-cli](https://github.com/jwagner/smartcrop-cli/) for a more advanced [example](https://github.com/jwagner/smartcrop-cli/blob/master/smartcrop-cli.js#L100) of how to use smartcrop from node  including face detection with opencv.
 
+Check out [smartcrop-cli](https://github.com/jwagner/smartcrop-cli/) for a more advanced [example](https://github.com/jwagner/smartcrop-cli/blob/master/smartcrop-cli.js#L100) of how to use smartcrop from node including face detection with opencv.
 
 ## Changelog
 
