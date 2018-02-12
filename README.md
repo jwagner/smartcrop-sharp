@@ -6,8 +6,11 @@ This is an adapter module for using [smartcrop.js](https://github.com/jwagner/sm
 with node.js using [sharp](https://github.com/lovell/sharp) for image decoding.
 
 ## Installation
+
+You'll need to install `sharp` alongside `smartcrop-sharp`.
+
 ```
-npm install --save smartcrop-sharp
+npm install --save smartcrop-sharp sharp
 ```
 
 ## API
