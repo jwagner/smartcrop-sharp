@@ -1,6 +1,6 @@
 {
   "name": "smartcrop-sharp",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "smartcrop adapter for sharp",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Jonas Wagner <jonas@29a.ch>",
   "license": "MIT",
   "dependencies": {
-    "smartcrop": "^1.1.1"
+    "smartcrop": "^2.0.1"
   },
   "peerDependencies": {
     "sharp": "^0.19.0"
