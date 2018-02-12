@@ -53,6 +53,8 @@ Check out [smartcrop-cli](https://github.com/jwagner/smartcrop-cli/) for a more 
 
 ## Changelog
 
-### 2.0 (beta)
+### 2.0.2
 
-It's faster.
+**sharp is now a peer dependency you will need to install it via `npm install sharp` when updating**
+In short: It's a lot faster, especially when calculating bigger crops.
+The quality of the crops should be comparable but the exact results are going to be different.
