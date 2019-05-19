@@ -2,7 +2,7 @@ var smartcrop = require('smartcrop');
 var sharp = require('sharp');
 
 function rgb2rgba(input) {
-  var output = new Buffer(input.length / 3 * 4);
+  var output = Buffer.alloc(input.length / 3 * 4);
   for (var i = 0; i < input.length; i += 3) {
     output[i / 3 * 4] = input[i];
     output[i / 3 * 4 + 1] = input[i + 1];
