@@ -26,25 +26,22 @@ npm install --save smartcrop-sharp sharp
 ## Example
 
 ```javascript
-var request = require('request');
-var sharp = require('sharp');
-var smartcrop = require('smartcrop-sharp');
+const sharp = require('sharp');
+const smartcrop = require('smartcrop-sharp');
 
+// finds the best crop of src and writes the cropped and resized image to dest.
 function applySmartCrop(src, dest, width, height) {
-  request(src, { encoding: null }, function process(error, response, body) {
-    if (error) return console.error(error);
-    smartcrop.crop(body, { width: width, height: height }).then(function(result) {
-      var crop = result.topCrop;
-      sharp(body)
+  return smartcrop.crop(src, { width: width, height: height })
+    .then(function(result) {
+      const crop = result.topCrop;
+      return sharp(src)
         .extract({ width: crop.width, height: crop.height, left: crop.x, top: crop.y })
         .resize(width, height)
         .toFile(dest);
-    });
-  });
+    })
 }
 
-var src = 'https://raw.githubusercontent.com/jwagner/smartcrop-gm/master/test/flower.jpg';
-applySmartCrop(src, 'flower-square.jpg', 128, 128);
+applySmartCrop('flower.jpg', 'flower-square.jpg', 128, 128);
 ```
 
 ## Face Detection Example
