@@ -2,6 +2,7 @@
   "name": "smartcrop-sharp",
   "version": "2.0.3",
   "description": "smartcrop adapter for sharp",
+  "types": "index.d.ts", 
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js test/test.js && mocha --reporter spec"
