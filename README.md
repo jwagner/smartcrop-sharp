@@ -50,6 +50,10 @@ Check out [smartcrop-cli](https://github.com/jwagner/smartcrop-cli/) for a more 
 
 ## Changelog
 
+### 2.0.4
+- Updated all dependencies
+- Added typescript definitions (with help from @nicholaschiang)
+
 ### 2.0.2
 
 - **sharp is now a peer dependency you will need to install it via `npm install sharp` when updating**
