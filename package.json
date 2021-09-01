@@ -1,25 +1,27 @@
 {
   "name": "smartcrop-sharp",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "smartcrop adapter for sharp",
   "types": "index.d.ts", 
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "eslint index.js test/test.js && mocha --reporter spec"
+    "test": "eslint index.js test/test.js && mocha --reporter spec && ts-node test/type-test.ts"
   },
   "author": "Jonas Wagner <jonas@29a.ch>",
   "license": "MIT",
   "dependencies": {
-    "smartcrop": "^2.0.3"
+    "smartcrop": "^2.0.4"
   },
   "peerDependencies": {
-    "sharp": "^0.25.3"
+    "sharp": "^0.29.0"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
+    "chai": "^4.3.4",
     "eslint": "^7.1.0",
-    "mocha": "^7.2.0",
-    "prettier-eslint": "^10.1.1",
-    "sharp": "^0.25.3"
+    "mocha": "^9.1.1",
+    "prettier-eslint": "^13.0.0",
+    "sharp": "^0.29.0",
+    "ts-node": "^10.2.1"
   }
 }
