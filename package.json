@@ -3,8 +3,9 @@
   "version": "2.0.4",
   "description": "smartcrop adapter for sharp",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "eslint index.js test/test.js && mocha --reporter spec"
+    "test": "eslint index.js test/test.js && mocha --reporter spec && ts-node test/type-test.ts"
   },
   "author": "Jonas Wagner <jonas@29a.ch>",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "eslint": "^7.1.0",
     "mocha": "^9.1.1",
     "prettier-eslint": "^13.0.0",
-    "sharp": "^0.29.0"
+    "sharp": "^0.29.0",
+    "ts-node": "^10.2.1"
   }
 }
