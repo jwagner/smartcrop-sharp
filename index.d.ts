@@ -10,3 +10,4 @@ import { CropOptions, CropResult } from "smartcrop";
  * used by `sharp` to extract your final image.
  */
 export function crop(image: Buffer | string, cropOptions: CropOptions): Promise<CropResult>;
+
