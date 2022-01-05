@@ -10,6 +10,10 @@
   },
   "author": "Jonas Wagner <jonas@29a.ch>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwagner/smartcrop-sharp.git"
+  },
   "dependencies": {
     "smartcrop": "^2.0.4"
   },
