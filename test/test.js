@@ -23,6 +23,8 @@ describe('smartcrop', function() {
         .then(validateCrop);
     });
     it('accepts a stream', function() {
+      // increase timeout because the test depends on an external resource
+      this.timeout(10000);
       function httpsGetBuffer(src) {
         return new Promise((resolve,reject) => {
           const chunks = [];
