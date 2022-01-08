@@ -50,6 +50,9 @@ Check out [smartcrop-cli](https://github.com/jwagner/smartcrop-cli/) for a more 
 
 ## Changelog
 
+### 2.0.5
+- Update peerDependency to sharp 0.29
+
 ### 2.0.4
 - Updated all dependencies
 - Added typescript definitions (with help from @nicholaschiang)
