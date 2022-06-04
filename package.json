@@ -1,6 +1,6 @@
 {
   "name": "smartcrop-sharp",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "smartcrop adapter for sharp",
   "types": "index.d.ts",
   "main": "index.js",
@@ -14,17 +14,17 @@
     "url": "https://github.com/jwagner/smartcrop-sharp.git"
   },
   "dependencies": {
-    "smartcrop": "^2.0.4"
+    "smartcrop": "^2.0.5"
   },
   "peerDependencies": {
-    "sharp": "^0.29.0"
+    "sharp": "^0.30.6"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
-    "eslint": "^8.6.0",
-    "mocha": "^9.1.1",
-    "prettier-eslint": "^13.0.0",
-    "sharp": "^0.29.0",
-    "ts-node": "^10.2.1"
+    "chai": "^4.3.6",
+    "eslint": "^8.17.0",
+    "mocha": "^10.0.0",
+    "prettier-eslint": "^15.0.1",
+    "sharp": "^0.30.6",
+    "ts-node": "^10.8.1"
   }
 }
