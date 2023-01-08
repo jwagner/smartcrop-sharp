@@ -17,14 +17,14 @@
     "smartcrop": "^2.0.5"
   },
   "peerDependencies": {
-    "sharp": "^0.30.6"
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "chai": "^4.3.6",
     "eslint": "^8.17.0",
     "mocha": "^10.0.0",
     "prettier-eslint": "^15.0.1",
-    "sharp": "^0.30.6",
+    "sharp": "^0.31.3",
     "ts-node": "^10.8.1"
   }
 }
