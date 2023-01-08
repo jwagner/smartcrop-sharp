@@ -50,6 +50,9 @@ Check out [smartcrop-cli](https://github.com/jwagner/smartcrop-cli/) for a more 
 
 ## Changelog
 
+### 2.0.7
+- Update peerDependency to sharp 0.31
+
 ### 2.0.6
 - Update peerDependency to sharp 0.30
 
