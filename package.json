@@ -1,6 +1,6 @@
 {
   "name": "smartcrop-sharp",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "smartcrop adapter for sharp",
   "types": "index.d.ts",
   "main": "index.js",
