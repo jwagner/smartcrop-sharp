@@ -17,7 +17,7 @@
     "smartcrop": "^2.0.5"
   },
   "peerDependencies": {
-    "sharp": "^0.32.5"
+    "sharp": "> 0.0.1 < 1.0.0"
   },
   "devDependencies": {
     "chai": "^4.3.6",
