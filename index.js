@@ -14,7 +14,7 @@ function rgb2rgba(input) {
 
 var iop = {
   open: function(src) {
-    var image = sharp(src);
+    var image = sharp(src, {failOn: 'none'});
     return image.metadata().then(function(metadata) {
       return {
         width: metadata.width,
